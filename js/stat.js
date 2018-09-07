@@ -53,7 +53,7 @@ window.renderStatistics = function (ctx, names, times) {
   ctx.fillStyle = FONT_COLOR;
   ctx.font = FONT_STYLE;
   ctx.fillText('Ура вы победили!', 140, 40);
-  ctx.fillText('Список результатов:', 140, 60);
+  ctx.fillText('Список результатов:', 140, 65);
 
   createHistogram(ctx, names, times);
 };
