@@ -41,7 +41,6 @@ var eyesColors = [
   'green'
 ];
 
-var wizards = [];
 
 var getRandomArrayItem = function (arr) {
   return arr[Math.random() * arr.length | 0];
@@ -60,7 +59,7 @@ var getListWizards = function () {
   return wizardsArr;
 };
 
-wizards = getListWizards();
+var wizards = getListWizards();
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
 
