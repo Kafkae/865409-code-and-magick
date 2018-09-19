@@ -46,9 +46,9 @@ var getRandomArrayItem = function (arr) {
   return arr[Math.random() * arr.length | 0];
 };
 
-var getListWizards = function () {
+var getListWizards = function (wizardsCount) {
   var wizardsArr = [];
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < wizardsCount; i++) {
     var wizard = {
       'name': getRandomArrayItem(namesWizards) + ' ' + getRandomArrayItem(surnamesWizards),
       'coatColor': getRandomArrayItem(coatColors),
@@ -59,7 +59,7 @@ var getListWizards = function () {
   return wizardsArr;
 };
 
-var wizards = getListWizards();
+var wizards = getListWizards(4);
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
 
